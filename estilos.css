@@ -1,0 +1,184 @@
+html{
+    height: auto;
+    width: auto;
+}
+
+*{
+    margin:0px;
+    padding:0px;
+}
+
+a{
+    text-decoration: none;
+    color:black
+}
+
+a:hover{
+    text-decoration: underline;
+    color: rgb(21, 187, 243)
+}
+
+nav ul {
+    height: 100%;
+    float: right;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+body{
+    position: relative;
+    background-image:url(IMG/Fondo-2.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+nav ul li{
+    margin: 10px;
+    float:right;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    min-height:75px;
+    width:100% ;
+    z-index: 2;
+    margin: auto;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background:lightgray;
+}
+
+.logo{
+    display:flex;
+    align-items: center;
+}
+
+.img-01{
+    height: 75px;
+}
+
+.clearfix{
+    clear:both;
+}
+
+#content{
+    z-index: 1;
+    padding-top:55px;
+    padding-left:5px;
+    text-align:left;
+    width:100% auto;
+}
+
+.article{
+    padding: 15px;
+    font-weight: bold;
+    margin-top:15px;
+    margin-bottom:15px;
+}
+
+.article p{
+    font-size:24px;
+    text-shadow: 0 0 5px black;
+    color:rgb(221, 219, 219);
+}
+
+.article a{
+    color:rgb(221, 219, 219);
+    text-shadow: 0 0 5px black;
+}
+
+.article a:hover{
+    color: rgb(21, 187, 243);
+    text-shadow: 0 0 5px black;
+}
+
+.article h1{
+    font-size: 48px;
+    text-align: center;
+    color: rgb(83, 11, 165);
+    text-shadow: 0 0 3px black;
+    text-decoration-line: underline;
+}
+
+.article h2{
+    color: rgb(83, 11, 165);
+    font-size: 32px;
+    text-shadow: 0 0 3px black;
+    text-decoration-line: underline;
+}
+
+
+
+.foto {
+    display: flex;
+    width: 100px;
+}
+
+.img-02{
+    height: 230px;
+}
+
+.img-03{
+    height:64px;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.img-04{
+    height:55px;
+    padding-left: 0%;
+    justify-content: center;
+    vertical-align: middle;
+    margin-left:0px
+}
+
+.article p a {
+    color:rgb(21, 187, 243);
+}
+
+.jijo {
+    padding: 0%;
+    align-content: center;
+    vertical-align: middle;
+}
+
+.joji{
+    padding:0px ;
+    vertical-align:middle;
+    height: auto;
+    display:contents;
+    align-items: center;
+}
+
+.indice{
+padding-left:15%;
+padding-right:15%;
+display:grid;
+grid-template-columns: repeat(2, 1fr) ;
+align-content: center;
+}
+
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+
+    nav{
+        padding: 10px 0px;
+    }
+
+    .indice{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
